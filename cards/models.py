@@ -8,6 +8,7 @@ Cartão:
     Nome do cartão
     Data de vencimento da fatura
     Data de pagamento
+    
 """
 
 class Card(models.Model):
@@ -17,3 +18,4 @@ class Card(models.Model):
     
     def __str__(self):
         return self.card_name
+    

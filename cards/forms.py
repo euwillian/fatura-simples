@@ -2,7 +2,7 @@ from django import forms
 from cards.models import Card
 
 """ 
-Este arquivo é responsável por criar o formulário em tela com todos os campos do Models
+Este arquivo é responsável por criar o formulário em tela com todos os campos do Models.py
 
 """
 

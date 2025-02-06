@@ -2,13 +2,15 @@ from django.db import models
 from cards.models import Card
 
 """
-Transações
+Este arquivo é reponsável por criar todo o banco de dados de acordo com os campos
 
-Data
-Valor total
-Parcelas
+id_cartão
+Data do gasto
+Total gasto
+Número de parcelas
 Descrição
 Quem gastou
+Data atual
 
 """
 
