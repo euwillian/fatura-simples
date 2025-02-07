@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content  %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <h3>Bem vindo, {{ user.username }}</h3>
+    {% endif %}
+    <header>
+        <nav>
+          <ul>
+            <li><a href="{% url 'new_card' %}">Adicionar Cartão</a></li>
+            <li><a href="{% url 'new_transactions' %}">Adicionar Gasto</a></li>
+            <li><a href="">Adicionar Categoria</a></li>
+            <li><a href="">Sair do Sistema</a></li>
+          </ul>
+        </nav>
+      </header>
+</body>
+</html>
+{% endblock %}

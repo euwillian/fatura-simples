@@ -12,4 +12,8 @@ class NewCardCreateView(CreateView):
     model = Card
     form_class = CardModelForm
     template_name = 'new_card.html'
+
+
+def index(request):
+    return render(request, 'index.html')    
        
